@@ -4,6 +4,7 @@ import { TopnavbarComponent } from './topnavbar/topnavbar.component';
 import { AsidenavbarComponent } from './asidenavbar/asidenavbar.component';
 import { FooternavbarComponent } from './footernavbar/footernavbar.component';
 import { SettingsnavbarComponent } from './settingsnavbar/settingsnavbar.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   imports: [
@@ -13,13 +14,15 @@ import { SettingsnavbarComponent } from './settingsnavbar/settingsnavbar.compone
       TopnavbarComponent,
       AsidenavbarComponent,
       FooternavbarComponent,
-      SettingsnavbarComponent
+      SettingsnavbarComponent,
+      BreadcrumbsComponent
   ],
     exports: [
         TopnavbarComponent,
         AsidenavbarComponent,
         FooternavbarComponent,
-        SettingsnavbarComponent
+        SettingsnavbarComponent,
+        BreadcrumbsComponent
     ]
 })
 export class LayoutModule { }

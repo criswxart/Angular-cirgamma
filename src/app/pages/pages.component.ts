@@ -1,11 +1,11 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-dashborad',
-  templateUrl: './dashborad.component.html',
-  styleUrls: ['./dashborad.component.scss']
+  selector: 'app-pages',
+  templateUrl: './pages.component.html',
+  styleUrls: []
 })
-export class DashboradComponent implements OnInit, OnDestroy {
+export class PagesComponent implements OnInit, OnDestroy {
 
   constructor() { }
 
