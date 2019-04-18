@@ -5,10 +5,12 @@ import { AsidenavbarComponent } from './asidenavbar/asidenavbar.component';
 import { FooternavbarComponent } from './footernavbar/footernavbar.component';
 import { SettingsnavbarComponent } from './settingsnavbar/settingsnavbar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { PAGES_ROUTES } from '../pages/pages.routes';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    PAGES_ROUTES
   ],
   declarations: [
       TopnavbarComponent,

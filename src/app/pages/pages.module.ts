@@ -5,23 +5,29 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { LayoutModule } from '../layout/layout.module';
 import { PagesComponent } from './pages.component';
+import { CreateformComponent } from './usuario/createform.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
     declarations: [
         DashboardComponent,
         UsuarioComponent,
-        PagesComponent
+        PagesComponent,
+        CreateformComponent
     ],
     imports: [
         PAGES_ROUTES,
         LayoutModule,
-        CommonModule
+        CommonModule,
+        FormsModule
 
     ],
     exports: [
         DashboardComponent,
-        UsuarioComponent
+        UsuarioComponent,
+        PagesComponent,
+        CreateformComponent
 
     ]
 })
