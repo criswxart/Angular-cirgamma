@@ -4,8 +4,10 @@ import { APP_ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import {LoginModule} from './login/login.module';
 import { HttpClientModule } from '@angular/common/http';
-import {UsuarioService} from './services/usuario.service';
 import { PagesModule} from './pages/pages.module';
+//Servicios
+import { ServiceModule } from './services/service.module';
+
 
 @NgModule({
   declarations: [
@@ -17,10 +19,10 @@ import { PagesModule} from './pages/pages.module';
     LoginModule,
     HttpClientModule,
     PagesModule,
-    APP_ROUTES
+    APP_ROUTES,
+    ServiceModule
   ],
   providers: [
-    UsuarioService
   ],
   bootstrap: [AppComponent]
 })
