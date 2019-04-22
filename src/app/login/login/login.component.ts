@@ -4,7 +4,7 @@ declare var $;
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: []
 })
 export class LoginComponent implements OnInit {
 
@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-      this.router.navigate(['Dashboard']);
+      this.router.navigate(['/dashboard']);
   }
 
 }

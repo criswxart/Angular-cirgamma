@@ -36,7 +36,11 @@
             </span>
         </a>
         <ul class="treeview-menu">
-          <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Perfiles</a></li>
+          <li *ngFor="let menu of asidenavbar.menu" >
+            <a [class]="menu.icono" [routerLink]="[menu.url]"> 
+                &nbsp;<i>{{ menu.titulo }}</i> 
+          </a>
+        </li>
         </ul>
       </li>
       <li class="treeview">

@@ -7,6 +7,7 @@ import { LayoutModule } from '../layout/layout.module';
 import { PagesComponent } from './pages.component';
 import { CreateformComponent } from './usuario/createform.component';
 import { FormsModule } from '@angular/forms';
+import { ProfesionalComponent } from './profesional/profesional.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
         DashboardComponent,
         UsuarioComponent,
         PagesComponent,
-        CreateformComponent
+        CreateformComponent,
+        ProfesionalComponent
     ],
     imports: [
         PAGES_ROUTES,
